@@ -5,6 +5,11 @@ function MovingObject (options) {
     this.color = options.color;
 
 }
+MovingObject.prototype.move = function () {
+  let [a, b] = this.vel;
+  let [x, y] = this.pos;
+  this.pos = [x + a, y + b];
+};
 
 MovingObject.prototype.draw = function (ctx) {
 
