@@ -1,5 +1,6 @@
 const MovingObject = require('./moving_object.js');
 const Asteroid = require('./asteroid.js');
+const Game = require('./game.js');
 
 window.addEventListener('DOMContentLoaded', function () {
     console.log('DOM loaded!!!');
@@ -10,6 +11,7 @@ window.addEventListener('DOMContentLoaded', function () {
     window.ctx = ctx;
     window.MovingObject = MovingObject;
     window.Asteroid = Asteroid;
+    window.Game = Game;
 });
 
 console.log("Webpack is working!");
